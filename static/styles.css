@@ -5,13 +5,21 @@
   left: 800px;
   width: 100%;
   color: white;
-  font-family: "Codystar";
-  font-size: 70px; }
+  font-family: "Codystar"; }
 
 img.main_pic {
-  min-height: 100%;
-  min-width: 100%;
-  width: 100%;
+  min-height: auto;
+  min-width: auto;
+  width: auto;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0; }
+
+img.main_pic {
+  min-height: auto;
+  min-width: auto;
+  width: auto;
   height: auto;
   position: fixed;
   top: 0;
@@ -48,11 +56,11 @@ img.main_pic {
   font-size: 40px;
   background-color: black;
   /* Black fallback color */
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: transparent;
   /* Black w/opacity */
   overflow-x: hidden;
   /* Disable horizontal scroll */
-  transition: 0.5s;
+  transition: 0.8s;
   /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */ }
 
 /* Position the content inside the overlay */
@@ -98,9 +106,5 @@ img.main_pic {
     font-size: 40px;
     top: 15px;
     right: 35px; } }
-.mystyle {
-  width: 100%;
-  padding: 25px;
-  background-color: coral;
-  color: white;
-  font-size: 25px; }
+
+/*# sourceMappingURL=styles.css.map */
