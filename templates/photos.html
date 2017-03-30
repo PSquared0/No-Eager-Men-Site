@@ -1,0 +1,69 @@
+{% extends 'base.html' %} {% block content %}
+  <body>
+
+<div class="row">
+  <div class="column">
+    <img src="static/images/nem1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="static/images/nem2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="static/images/nem3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="static/images/nem4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+        <img src="static/images/nem1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+        <img src="static/images/nem2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+        <img src="static/images/nem3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+        <img src="static/images/nem4.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <div class="column">
+      <img class="demo" src="static/images/nem1.jpg" onclick="currentSlide(1)" alt="HOtel Utah">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="static/images/nem2.jpg" onclick="currentSlide(2)" alt="San Gregorio General Store">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="static/images/nem3.jpg" onclick="currentSlide(3)" alt="Hotel Utah">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="static/images/nem4.jpg" onclick="currentSlide(4)" alt="San Gregorio General Store">
+    </div>
+  </div>
+</div>
+
+</body>
+{% endblock %}

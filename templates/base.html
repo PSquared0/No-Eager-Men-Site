@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="static/main.js"></script>
+  <link rel="stylesheet" type="text/css" href="static/styles.css">
+  <script src="js/jquery.combinedScroll.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Codystar" rel="stylesheet">
+</head>
+
+
+
+{% for flash in get_flashed_messages() %}
+  {{ flash }}
+{% endfor %}
+
+{% block content %}
+  put your content here
+{% endblock %}
